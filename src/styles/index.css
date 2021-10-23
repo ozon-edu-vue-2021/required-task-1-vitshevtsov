@@ -30,6 +30,7 @@ button {
 
 button:disabled {
     background-color: #CFD8DC;
+    cursor: auto;
 }
 
 button:disabled:hover {
@@ -91,6 +92,10 @@ a:nth-child(2n) {
 
 a:nth-child(3n) {
     background-color: #BCAAA4;
+}
+
+.preview {
+    vertical-align: middle;
 }
 
 /* Popup style */
@@ -157,4 +162,5 @@ figcaption {
 
 .popup .link {
     display: inline;
+    background: none;
 }

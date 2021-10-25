@@ -9,7 +9,7 @@ body {
 img {
     width: 100%;
     max-width: 100%;
-    display: bloсk;
+    display: block;
 }
 
 a {
@@ -30,6 +30,7 @@ button {
 
 button:disabled {
     background-color: #CFD8DC;
+    cursor: auto;
 }
 
 button:disabled:hover {
@@ -50,15 +51,16 @@ main {
 }
 
 /* Action style */
-.action {
+.fetch {
     background-color: #66BB6A;
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 6px;
-    margin: 10px 0;
+    margin: 10px auto;
+    max-width: 200px;
 }
 
-.action:hover {
+.fetch:hover {
     background-color: #4CAF50;
 }
 
@@ -91,6 +93,7 @@ a:nth-child(2n) {
 a:nth-child(3n) {
     background-color: #BCAAA4;
 }
+
 
 /* Popup style */
 .popup .content {
@@ -126,14 +129,13 @@ figcaption {
     bottom: 0;
     right: 0;
     background-color: rgba(33, 33, 33, 0.5);
-    z-index: -1;
 }
 
 .popup.open {
     visibility: visible;
 }
 
-.action {
+.close {
     position: absolute;
     top: 50px;
     right: 50px;
@@ -157,4 +159,5 @@ figcaption {
 
 .popup .link {
     display: inline;
+    background: none;
 }
